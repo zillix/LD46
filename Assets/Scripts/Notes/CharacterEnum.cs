@@ -2,10 +2,8 @@
 {
 	pious,
 	feral,
-	aspirant,
 	errant,
-	lettered,
-	vigilant
+	arcane
 }
 
 public static class CharacterData
@@ -14,18 +12,14 @@ public static class CharacterData
 	{
 		switch (charName)
 		{
-			case CharacterName.aspirant:
-				return "the aspirant";
+			case CharacterName.arcane:
+				return "the arcane";
 			case CharacterName.feral:
 				return "the feral";
-			case CharacterName.lettered:
-				return "the lettered";
 			case CharacterName.errant:
 				return "the errant";
 			case CharacterName.pious:
 				return "the pious";
-			case CharacterName.vigilant:
-				return "the vigilant";
 		}
 
 		return "the mistake";

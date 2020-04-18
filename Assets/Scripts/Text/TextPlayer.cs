@@ -61,16 +61,12 @@ public class TextPlayer : MonoBehaviour
 		{
 			case CharacterName.pious:
 				return "pious";
-			case CharacterName.lettered:
-				return "lettered";
+			case CharacterName.arcane:
+				return "arcane";
 			case CharacterName.errant:
 				return "errant";
-			case CharacterName.aspirant:
-				return "aspirant";
 			case CharacterName.feral:
 				return "feral";
-			case CharacterName.vigilant:
-				return "vigilant";
 			default:
 				return "doesn'texist";
 		}

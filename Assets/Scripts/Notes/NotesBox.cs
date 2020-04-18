@@ -8,10 +8,8 @@ public class NotesBox : MonoBehaviour
 {
 	public CharacterNotes pious;
 	public CharacterNotes feral;
-	public CharacterNotes aspirant;
 	public CharacterNotes errant;
-	public CharacterNotes lettered;
-	public CharacterNotes vigilant;
+	public CharacterNotes arcane;
 
 	public NotesController notes;
 
@@ -70,10 +68,8 @@ public class NotesBox : MonoBehaviour
 		{
 			case CharacterName.pious: return pious;
 			case CharacterName.feral: return feral;
-			case CharacterName.aspirant: return aspirant;
 			case CharacterName.errant: return errant;
-			case CharacterName.lettered: return lettered;
-			case CharacterName.vigilant: return vigilant;
+			case CharacterName.arcane: return arcane;
 			default: return pious;
 		}
 	}

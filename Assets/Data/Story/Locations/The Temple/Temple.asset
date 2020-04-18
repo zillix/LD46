@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf7f83ee662149645b0da0b121b3ae5a, type: 3}
+  m_Name: Temple
+  m_EditorClassIdentifier: 
+  storyName: Temple
+  textDatas:
+  - {fileID: 11400000, guid: ae21a3eddd5ca4144aadb452687b3251, type: 2}
+  - {fileID: 11400000, guid: 6c9f9078f6ec81f44a318529baa082ff, type: 2}
+  - {fileID: 11400000, guid: b81f2fee5cd72464aa573d8fce923bbf, type: 2}
+  relatedStories:
+  - choiceText: the pious
+    choiceTexts:
+    - {fileID: 11400000, guid: 289e3ad9bdf7f31448180c5dd2a3d3a5, type: 2}
+    linkedStory: {fileID: 11400000, guid: 49ea1933e1726f54b9d7f3b8b5772491, type: 2}
+  - choiceText: the wood
+    choiceTexts:
+    - {fileID: 11400000, guid: 5215c4acf0b7a6f46a2e36139acde73a, type: 2}
+    linkedStory: {fileID: 11400000, guid: bbfddd28e37f43c469c6f49b5cb9eabe, type: 2}
+  cameraTarget: {fileID: 0}

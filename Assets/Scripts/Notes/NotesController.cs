@@ -7,10 +7,8 @@ public class NotesController : MonoBehaviour
 {
 	public Color pious;
 	public Color feral;
-	public Color aspirant;
+	public Color arcane;
 	public Color errant;
-	public Color lettered;
-	public Color vigilant;
 
 	public Transform notesPosition;
 	public float notesTriggerDist = 5;
@@ -27,9 +25,7 @@ public class NotesController : MonoBehaviour
 			case CharacterName.pious: return pious;
 			case CharacterName.feral: return feral;
 			case CharacterName.errant: return errant;
-			case CharacterName.lettered: return lettered;
-			case CharacterName.vigilant: return vigilant;
-			case CharacterName.aspirant: return aspirant;
+			case CharacterName.arcane: return arcane;
 			default: return Color.black;
 		}
 	}
