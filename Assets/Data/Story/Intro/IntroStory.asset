@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf7f83ee662149645b0da0b121b3ae5a, type: 3}
+  m_Name: IntroStory
+  m_EditorClassIdentifier: 
+  storyName: Intro
+  textDatas:
+  - {fileID: 11400000, guid: e6734d764bfae2a4399c7cd921f4354b, type: 2}
+  - {fileID: 11400000, guid: c3dc4da7daf1ccd4aab19ce5e5154899, type: 2}
+  relatedStories:
+  - choiceText: the beginning
+    choiceTexts:
+    - {fileID: 11400000, guid: 1ce173d8877f0c2419a8f865fdba58c1, type: 2}
+    linkedStory: {fileID: 11400000, guid: f098b6e003fa8b04c9f5d40e96365318, type: 2}
+  - choiceText: the end
+    choiceTexts:
+    - {fileID: 11400000, guid: ae7ddc4d16045f04689d5ea45a7550fc, type: 2}
+    linkedStory: {fileID: 11400000, guid: 8dd9b5f71d1c464468f529b4cdfc6eba, type: 2}
+  cameraTarget: {fileID: 0}
