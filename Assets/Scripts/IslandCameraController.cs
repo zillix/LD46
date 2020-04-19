@@ -16,9 +16,14 @@ public class IslandCameraController : MonoBehaviour
 	private Transform targetTransform;
 	private Coroutine tween;
 
+	public void Awake()
+	{
+
+		ForceTransform(startTransform);
+	}
+
 	public void Start()
 	{
-		ForceTransform(startTransform);
 	}
 
 	public void Update()

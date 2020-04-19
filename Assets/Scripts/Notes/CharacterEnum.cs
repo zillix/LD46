@@ -13,13 +13,13 @@ public static class CharacterData
 		switch (charName)
 		{
 			case CharacterName.arcane:
-				return "the arcane";
+				return "the Arcane";
 			case CharacterName.feral:
-				return "the feral";
+				return "the Feral";
 			case CharacterName.errant:
-				return "the errant";
+				return "the Errant";
 			case CharacterName.pious:
-				return "the pious";
+				return "the Pious";
 		}
 
 		return "the mistake";

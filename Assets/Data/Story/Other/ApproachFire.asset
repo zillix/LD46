@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e8faa731cfab5f6459a5a47bd95cdd0f, type: 3}
-  m_Name: Part2
+  m_Name: ApproachFire
   m_EditorClassIdentifier: 
-  text: <cspace=1px>the tale of the Isle has been told many times, down the generations</cspace>
+  text: come, approach the fire
   skippable: 1
   doOverridePauseDuration: 0
   pauseDuration: 3
-  doOverrideTypeSpeed: 1
-  typeSpeed: 0.07
-  doJitter: 1
+  doOverrideTypeSpeed: 0
+  typeSpeed: 0.2
+  doJitter: 0
   jitterMagnitude: {x: 0, y: 1.5}
   jitterFrequencySeconds: 0.15

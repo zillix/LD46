@@ -17,14 +17,60 @@ public class FireController : MonoBehaviour
 	private bool playerNear = false;
 
 	public ParticleSystemRenderer particleSystemRenderer;
+	public ParticleSystem emitter;
+
+	public float OffSize = .2f;
+	public float OffSpeed = .1f;
+	public float OffLifetime = 2f;
+	public float OffRadialSpeed = 0;
+	public float OffOrbitalX = 0f;
+	public float OffLinearY = 1f;
+
+	private float onSize;
+	private float onSpeed;
+	private float onLifetime;
+	private float radialSpeed;
+	private float orbitalX;
+	private float linearY;
 
 	private Coroutine tween;
+	private bool isOn = false;
+	private ParticleSystem.MainModule particleOnModule;
 
     // Start is called before the first frame update
     void Start()
     {
 		setParticleSystemValues(VisionOffOpacity, VisionOffColorAmt);
 		visionActive = false;
+	
+		ParticleSystem.MainModule offModule = emitter.main;
+		onSize = offModule.startSizeMultiplier;
+		onSpeed = offModule.startSpeedMultiplier;
+		onLifetime = offModule.startLifetimeMultiplier;
+		ParticleSystem.VelocityOverLifetimeModule offVel = emitter.velocityOverLifetime;
+		orbitalX = offVel.orbitalXMultiplier;
+		linearY = offVel.yMultiplier;
+		radialSpeed = offVel.radialMultiplier;
+
+		offModule.startSize = OffSize;
+		offModule.startSpeed = OffSpeed;
+		offModule.startLifetime = OffLifetime;
+		offVel.yMultiplier = OffLinearY;
+		offVel.radialMultiplier = OffRadialSpeed;
+		offVel.orbitalX = OffOrbitalX;
+	}
+
+	public void TurnOn()
+	{
+		ParticleSystem.MainModule main = emitter.main;
+		main.startSize = onSize;
+		main.startSpeed = onSpeed;
+		main.startLifetime = onLifetime;
+		ParticleSystem.VelocityOverLifetimeModule vel = emitter.velocityOverLifetime;
+		vel.yMultiplier = linearY;
+		vel.radialMultiplier = radialSpeed;
+		vel.orbitalX = orbitalX;
+
 	}
 
 	public void Update()

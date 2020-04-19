@@ -16,6 +16,12 @@ public class StoryManager : MonoBehaviour
 	public MainCameraController mainCamera;
 
 	public StoryData startStory;
+	public List<TextData> introTexts;
+	public float StartTriggerDist = 4f;
+	public Transform player;
+
+	private bool waitingForStartTrigger = false;
+	private bool startTriggered = false;
 
 	public HashSet<string> visitedStories = new HashSet<string>();
 
@@ -24,14 +30,34 @@ public class StoryManager : MonoBehaviour
 
 	public void Start()
 	{
-		if (startStory != null)
+		/*if (startStory != null)
 		{
 			PlayStory(startStory);
+		}*/
+	}
+
+	public void StartGame()
+	{
+		for (int i = 0; i < introTexts.Count; ++i)
+		{
+			narratorText.enqueue(introTexts[i]);
 		}
+		waitingForStartTrigger = true;
 	}
 
 	public void Update()
 	{
+		if (waitingForStartTrigger)
+		{
+			float playerDist = Mathf.Abs(player.position.x - fireController.transform.position.x);
+			if (playerDist < StartTriggerDist)
+			{
+				startTriggered = true;
+				waitingForStartTrigger = false;
+				PlayStory(startStory, ()=> { fireController.TurnOn(); });
+			}
+		}
+
 		if (Input.GetKeyDown(KeyCode.Space))
 		{
 			playerText.Skip();
@@ -68,7 +94,7 @@ public class StoryManager : MonoBehaviour
 		StopAllCoroutines();
 	}
 
-	public void PlayStory(StoryData story)
+	public void PlayStory(StoryData story, Action postChoiceCallback = null)
 	{
 		visitedStories.Add(story.storyName);
 
@@ -85,7 +111,7 @@ public class StoryManager : MonoBehaviour
 					else
 					{
 
-						displayChoices(story.relatedStories);
+						displayChoices(story.relatedStories, postChoiceCallback);
 						fireController.StopVision();
 					}
 				};
@@ -103,24 +129,24 @@ public class StoryManager : MonoBehaviour
 		}
 	}
 
-	private void displayChoices(List<StoryData.StoryChoice> choices)
+	private void displayChoices(List<StoryData.StoryChoice> choices, Action postChoiceCallback = null)
 	{
 		choiceBox.Clear();
 		foreach (StoryData.StoryChoice choice in choices)
 		{
 			bool greyOut = visitedStories.Contains(choice.linkedStory.storyName);
-			choiceBox.AddChoice(choice.choiceText, () => { askChoice(choice); }, greyOut);
+			choiceBox.AddChoice(choice.choiceText, () => { askChoice(choice, postChoiceCallback); }, greyOut);
 		}
 	}
 
-	public void askChoice(StoryData.StoryChoice choice)
+	public void askChoice(StoryData.StoryChoice choice, Action postChoiceCallback = null)
 	{
 		for (int i = 0; i < choice.choiceTexts.Count; ++i)
 		{
 			Action callback = null;
 			if (i == choice.choiceTexts.Count - 1)
 			{
-				callback = () => { PlayStory(choice.linkedStory); };
+				callback = () => { PlayStory(choice.linkedStory); if (postChoiceCallback != null) { postChoiceCallback(); } };
 			}
 			playerText.enqueue(choice.choiceTexts[i], callback);
 		}

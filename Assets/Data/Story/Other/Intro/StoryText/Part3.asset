@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8faa731cfab5f6459a5a47bd95cdd0f, type: 3}
   m_Name: Part3
   m_EditorClassIdentifier: 
-  text: <cspace=1px>where would you like to start?</cspace>
+  text: '<cspace=1px>now{.4}.{.4}.{.4}.{.4}
+
+    where would you like to start?</cspace>'
   skippable: 1
   doOverridePauseDuration: 0
   pauseDuration: 3

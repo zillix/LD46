@@ -6,6 +6,7 @@ Shader "LD46/UnlitScreenSpaceParticle"{
 		_MainTex("Texture", 2D) = "white" {}
 		_Alpha("Alpha", Float) = 1
 		_ColorAmt("ColorAmt", Float) = 1
+		_Aspect("AspectRatio", Float) = 1
 	}
 
 		SubShader{
@@ -39,6 +40,7 @@ Shader "LD46/UnlitScreenSpaceParticle"{
 
 			float _Alpha;
 			float _ColorAmt;
+			float _Aspect;
 
 			//the object data that's put into the vertex shader
 			struct appdata {
@@ -71,7 +73,7 @@ Shader "LD46/UnlitScreenSpaceParticle"{
 			fixed4 frag(v2f i) : SV_TARGET{
 				float2 textureCoordinate = i.screenPosition.xy / i.screenPosition.w;
 				float aspect = _ScreenParams.x / _ScreenParams.y;
-				textureCoordinate.x = textureCoordinate.x * aspect;
+				textureCoordinate.x = textureCoordinate.x * aspect * _Aspect;
 				textureCoordinate = TRANSFORM_TEX(textureCoordinate, _MainTex);
 				fixed4 col = tex2D(_MainTex, textureCoordinate);
 

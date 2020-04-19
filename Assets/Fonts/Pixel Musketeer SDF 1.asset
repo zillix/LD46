@@ -111,9 +111,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
-  m_Name: Pixel Musketeer SDF
+  m_Name: Pixel Musketeer SDF 1
   m_EditorClassIdentifier: 
-  hashCode: 862612474
+  hashCode: -1212854677
   material: {fileID: -426142544201674420}
   materialHashCode: -131900111
   m_Version: 1.1.0

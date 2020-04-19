@@ -16,6 +16,8 @@ MonoBehaviour:
   textDatas:
   - {fileID: 11400000, guid: e6734d764bfae2a4399c7cd921f4354b, type: 2}
   - {fileID: 11400000, guid: c3dc4da7daf1ccd4aab19ce5e5154899, type: 2}
+  - {fileID: 11400000, guid: c0da6b59eb58ece41bb89897e2d23e49, type: 2}
+  - {fileID: 11400000, guid: 79e1b52501cc86c418aa50f059232dba, type: 2}
   - {fileID: 11400000, guid: c35467e5689b49a40856b3cbe0171a78, type: 2}
   relatedStories:
   - choiceText: the beginning
