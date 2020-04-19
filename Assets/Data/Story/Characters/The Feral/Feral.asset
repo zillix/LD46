@@ -12,23 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7f83ee662149645b0da0b121b3ae5a, type: 3}
   m_Name: Feral
   m_EditorClassIdentifier: 
-  storyName: Beginning
+  storyName: Feral
   textDatas:
-  - {fileID: 11400000, guid: ae21a3eddd5ca4144aadb452687b3251, type: 2}
-  - {fileID: 11400000, guid: 6c9f9078f6ec81f44a318529baa082ff, type: 2}
-  - {fileID: 11400000, guid: b81f2fee5cd72464aa573d8fce923bbf, type: 2}
-  - {fileID: 11400000, guid: 15c26f3908349f045a8b681c5844ad27, type: 2}
+  - {fileID: 11400000, guid: c448d3daaf1ae8d4cacc34a21b7b5788, type: 2}
+  - {fileID: 11400000, guid: ffdee7911ed3a93469a6e5c7e848df96, type: 2}
+  - {fileID: 11400000, guid: 5956d4b6fd80d604996b7954a3980bcd, type: 2}
   relatedStories:
-  - choiceText: ok boomer
+  - choiceText: the Everwood
     choiceTexts:
-    - {fileID: 11400000, guid: 1c29c93a678c13e4ba49be9b660f2feb, type: 2}
-    linkedStory: {fileID: 11400000, guid: 1a58b9d5a9e1a2949bbafb56044931e9, type: 2}
-  - choiceText: the aspirants
+    - {fileID: 11400000, guid: 7dd1f7a0fca34a848be6f37b95f74a77, type: 2}
+    linkedStory: {fileID: 11400000, guid: bbfddd28e37f43c469c6f49b5cb9eabe, type: 2}
+  - choiceText: the High Arch
     choiceTexts:
-    - {fileID: 11400000, guid: 87752c45260639148b96ad597195d041, type: 2}
-    linkedStory: {fileID: 0}
-  - choiceText: the aspirants
-    choiceTexts:
-    - {fileID: 11400000, guid: 87752c45260639148b96ad597195d041, type: 2}
-    linkedStory: {fileID: 0}
+    - {fileID: 11400000, guid: e5712f6bfda7a7f4aa36a04f2a591fec, type: 2}
+    linkedStory: {fileID: 11400000, guid: d11d075d63370324b9c149fb9715d8c6, type: 2}
   cameraTarget: {fileID: 0}

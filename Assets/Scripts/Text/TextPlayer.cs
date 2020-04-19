@@ -13,7 +13,7 @@ public class TextPlayer : MonoBehaviour
 
 	private float lastJitterTime;
 
-	private const float DEFAULT_TYPE_SPEED = 0.05f;
+	private const float DEFAULT_TYPE_SPEED = 0.03f;
 
 	public void PlayText(TextData data, Action onFinishedPlaying)
 	{
@@ -43,6 +43,14 @@ public class TextPlayer : MonoBehaviour
 		if (currentText != null && currentText.skippable)
 		{
 			typer.Skip();
+		}
+	}
+
+	public void Abort()
+	{
+		if (typer)
+		{
+			typer.Abort();
 		}
 	}
 
@@ -83,7 +91,15 @@ public class TextPlayer : MonoBehaviour
 				string colorHex = ColorUtility.ToHtmlStringRGB(notes.GetColor(charName));
 				text = text.Replace("<" + tag + ">", "<color=#" + colorHex + ">");
 				text = text.Replace("</" + tag + ">", "</color>");
-				notes.RecordNote(charName, note);
+
+				if (note.IndexOf(tag, StringComparison.OrdinalIgnoreCase) < 0)
+				{
+					notes.RecordNote(charName, note);
+				}
+				else
+				{
+					notes.NameDiscovered(charName);
+				}
 			}
 		}
 

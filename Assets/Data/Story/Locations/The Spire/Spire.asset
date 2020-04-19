@@ -12,23 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7f83ee662149645b0da0b121b3ae5a, type: 3}
   m_Name: Spire
   m_EditorClassIdentifier: 
-  storyName: Beginning
+  storyName: Spire
   textDatas:
-  - {fileID: 11400000, guid: ae21a3eddd5ca4144aadb452687b3251, type: 2}
-  - {fileID: 11400000, guid: 6c9f9078f6ec81f44a318529baa082ff, type: 2}
-  - {fileID: 11400000, guid: b81f2fee5cd72464aa573d8fce923bbf, type: 2}
-  - {fileID: 11400000, guid: 15c26f3908349f045a8b681c5844ad27, type: 2}
+  - {fileID: 11400000, guid: 545407817a55f3845a2d19e6e718578d, type: 2}
+  - {fileID: 11400000, guid: 4f62caa7fac12a4498be2dc34cec0d07, type: 2}
+  - {fileID: 11400000, guid: 4eb38d87f373fca479d954183bcf7bdc, type: 2}
+  - {fileID: 11400000, guid: ae35d48c6d7b5374f9881a4149654538, type: 2}
+  - {fileID: 11400000, guid: 6b5dedfd5e8bdac4bb7a8153720c43d1, type: 2}
   relatedStories:
-  - choiceText: ok boomer
+  - choiceText: the Overlook
     choiceTexts:
-    - {fileID: 11400000, guid: 1c29c93a678c13e4ba49be9b660f2feb, type: 2}
-    linkedStory: {fileID: 11400000, guid: 1a58b9d5a9e1a2949bbafb56044931e9, type: 2}
-  - choiceText: the aspirants
-    choiceTexts:
-    - {fileID: 11400000, guid: 87752c45260639148b96ad597195d041, type: 2}
-    linkedStory: {fileID: 0}
-  - choiceText: the aspirants
-    choiceTexts:
-    - {fileID: 11400000, guid: 87752c45260639148b96ad597195d041, type: 2}
-    linkedStory: {fileID: 0}
+    - {fileID: 11400000, guid: efc4f9c5d9f4db7438094bc67cca52bc, type: 2}
+    linkedStory: {fileID: 11400000, guid: c8354e4a5c014c441bf308c8dd123b57, type: 2}
   cameraTarget: {fileID: 0}

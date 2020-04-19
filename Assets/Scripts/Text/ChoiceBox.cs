@@ -18,6 +18,8 @@ public class ChoiceBox : FollowingTextBox
 	private bool lockedIn = false;
 	private float inputDelay = 0f;
 
+	public TextBox blockingBox; // if this is open, ignore input
+
 	private static string GREYOUT_START = "<color=#888888>";
 	private static string GREYOUT_STOP = "<color=#888888>";
 
@@ -30,6 +32,16 @@ public class ChoiceBox : FollowingTextBox
 		{
 			GameObject.Destroy(child.gameObject);
 		}
+	}
+
+	public void Abort()
+	{
+		foreach (ChoiceElement choice in choices)
+		{
+			choice.Abort();
+		}
+		Clear();
+		hide();
 	}
 
 	protected override void Update()
@@ -70,6 +82,7 @@ public class ChoiceBox : FollowingTextBox
 
 	public void Cycle(int direction)
 	{
+		if (blockingBox && blockingBox.IsVisible) { return; }
 		if (lockedIn || choices.Count == 0) { return; }
 		bool isUp = direction < 0;
 		int newIndex = selectedIndex;
@@ -110,6 +123,7 @@ public class ChoiceBox : FollowingTextBox
 
 	public void Choose()
 	{
+		if (blockingBox && blockingBox.IsVisible) { return; }
 		if (inputDelay > 0)
 		{
 			return;

@@ -11,6 +11,8 @@ public class TextBox : MonoBehaviour, ITextBox
 
 	private string lastText;
 
+	private bool thisIsVisible = true;
+
 	Image image;
 		// Use this for initialization
 	void Awake()
@@ -49,11 +51,15 @@ public class TextBox : MonoBehaviour, ITextBox
 	public virtual void hide()
 	{
 		setAlpha(0);
+		thisIsVisible = false;
 	}
 	public virtual void show()
 	{
 		setAlpha(VisibleAlpha);
+		thisIsVisible = true;
 	}
+
+	public bool IsVisible {  get { return thisIsVisible; } }
 
 	protected void setAlpha(float value)
 	{

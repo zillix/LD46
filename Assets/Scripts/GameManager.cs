@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
 	public GameObject renderTexturePlane;
 	public IslandCameraController islandCamera;
 
+	public static bool DEBUG = true;
+
 	public void Start()
 	{
 		// this wasn't necessary, we just needed to turn off hdr on the camera to get pixel-perfect goodness

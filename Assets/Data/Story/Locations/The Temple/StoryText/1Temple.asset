@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8faa731cfab5f6459a5a47bd95cdd0f, type: 3}
   m_Name: 1Temple
   m_EditorClassIdentifier: 
-  text: home to <pious>the pious</pious>, the temple of sol shines bright on the
-    hill above the wood
+  text: home to <pious>the Pious</pious>, the Temple shone bright on the hill above
+    the Everwood and the Cavern
   skippable: 1
   doOverridePauseDuration: 0
   pauseDuration: 3

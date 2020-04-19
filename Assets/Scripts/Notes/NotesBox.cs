@@ -49,7 +49,7 @@ public class NotesBox : MonoBehaviour
 		gameObject.SetActive(true);
 		foreach (CharacterName character in Enum.GetValues(typeof(CharacterName))) {
 
-			setupCharacter(GetCharacter(character), character, notes.GetNotes(character), notes.GetColor(character));
+			setupCharacter(GetCharacter(character), character, notes.GetNotes(character), notes.GetDiscoveredNames.Contains(character), notes.GetColor(character));
 		}
 	}
 	public void Close()
@@ -74,10 +74,10 @@ public class NotesBox : MonoBehaviour
 		}
 	}
 
-	private void setupCharacter(CharacterNotes notesUi, CharacterName name, HashSet<string> notes, Color color)
+	private void setupCharacter(CharacterNotes notesUi, CharacterName name, HashSet<string> notes, bool discoveredNames, Color color)
 	{
 		color.a = 1;
-		if (notes == null)
+		if (!discoveredNames)
 		{
 			notesUi.title.text = "unknown";
 		}

@@ -12,23 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7f83ee662149645b0da0b121b3ae5a, type: 3}
   m_Name: TheAspirants
   m_EditorClassIdentifier: 
-  storyName: Beginning
+  storyName: Aspirants
   textDatas:
-  - {fileID: 11400000, guid: ae21a3eddd5ca4144aadb452687b3251, type: 2}
-  - {fileID: 11400000, guid: 6c9f9078f6ec81f44a318529baa082ff, type: 2}
-  - {fileID: 11400000, guid: b81f2fee5cd72464aa573d8fce923bbf, type: 2}
-  - {fileID: 11400000, guid: 15c26f3908349f045a8b681c5844ad27, type: 2}
+  - {fileID: 11400000, guid: bed10c6c092270742954990b9f6746b4, type: 2}
+  - {fileID: 11400000, guid: 0dfb6bea07079f548b9135857b99762e, type: 2}
+  - {fileID: 11400000, guid: b27b1b44abc21dc4487fc27403a7753e, type: 2}
   relatedStories:
-  - choiceText: ok boomer
+  - choiceText: the Errant
     choiceTexts:
-    - {fileID: 11400000, guid: 1c29c93a678c13e4ba49be9b660f2feb, type: 2}
-    linkedStory: {fileID: 11400000, guid: 1a58b9d5a9e1a2949bbafb56044931e9, type: 2}
-  - choiceText: the aspirants
+    - {fileID: 11400000, guid: 19abfbd20751b834e86a169fd4931a9f, type: 2}
+    linkedStory: {fileID: 11400000, guid: e4787cd35e6e8f5429b37c93063a3c94, type: 2}
+  - choiceText: the Feral
     choiceTexts:
-    - {fileID: 11400000, guid: 87752c45260639148b96ad597195d041, type: 2}
-    linkedStory: {fileID: 0}
-  - choiceText: the aspirants
+    - {fileID: 11400000, guid: 0108777c736f58c4194ea48c942ec2fc, type: 2}
+    linkedStory: {fileID: 11400000, guid: 5db336a7f13daeb4f83b317d6d651405, type: 2}
+  - choiceText: the Arcane
     choiceTexts:
-    - {fileID: 11400000, guid: 87752c45260639148b96ad597195d041, type: 2}
-    linkedStory: {fileID: 0}
+    - {fileID: 11400000, guid: d9b415cf4448fec4abc913d0cc480fc2, type: 2}
+    linkedStory: {fileID: 11400000, guid: f8088d0046ba39c46a2b3e4163f8b981, type: 2}
+  - choiceText: the Pious
+    choiceTexts:
+    - {fileID: 11400000, guid: 2f0a2e14004ecd743819f0a545d56365, type: 2}
+    linkedStory: {fileID: 11400000, guid: 49ea1933e1726f54b9d7f3b8b5772491, type: 2}
   cameraTarget: {fileID: 0}

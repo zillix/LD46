@@ -12,23 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7f83ee662149645b0da0b121b3ae5a, type: 3}
   m_Name: Keep
   m_EditorClassIdentifier: 
-  storyName: Beginning
+  storyName: Keep
   textDatas:
-  - {fileID: 11400000, guid: ae21a3eddd5ca4144aadb452687b3251, type: 2}
-  - {fileID: 11400000, guid: 6c9f9078f6ec81f44a318529baa082ff, type: 2}
-  - {fileID: 11400000, guid: b81f2fee5cd72464aa573d8fce923bbf, type: 2}
-  - {fileID: 11400000, guid: 15c26f3908349f045a8b681c5844ad27, type: 2}
+  - {fileID: 11400000, guid: 906ad56c93b183a41886da7cf88050ac, type: 2}
+  - {fileID: 11400000, guid: 6a418023e64ecfb4e98f3bb053224382, type: 2}
   relatedStories:
-  - choiceText: ok boomer
+  - choiceText: the High Arch
     choiceTexts:
-    - {fileID: 11400000, guid: 1c29c93a678c13e4ba49be9b660f2feb, type: 2}
-    linkedStory: {fileID: 11400000, guid: 1a58b9d5a9e1a2949bbafb56044931e9, type: 2}
-  - choiceText: the aspirants
+    - {fileID: 11400000, guid: 8315e531b8c67ca4aae26095feaa65c4, type: 2}
+    linkedStory: {fileID: 11400000, guid: d11d075d63370324b9c149fb9715d8c6, type: 2}
+  - choiceText: the Peak
     choiceTexts:
-    - {fileID: 11400000, guid: 87752c45260639148b96ad597195d041, type: 2}
-    linkedStory: {fileID: 0}
-  - choiceText: the aspirants
+    - {fileID: 11400000, guid: 5cdf1f8b3201ec44fa760ed400b12d5c, type: 2}
+    linkedStory: {fileID: 11400000, guid: 5988a1c40c0672142b2b1cdde6e34f04, type: 2}
+  - choiceText: the Maw
     choiceTexts:
-    - {fileID: 11400000, guid: 87752c45260639148b96ad597195d041, type: 2}
-    linkedStory: {fileID: 0}
+    - {fileID: 11400000, guid: d6ec0ab595b1c7f45a80f5ef5a828fa3, type: 2}
+    linkedStory: {fileID: 11400000, guid: acd34aa0e53dff345a053d021daed263, type: 2}
+  - choiceText: the Arcane
+    choiceTexts:
+    - {fileID: 11400000, guid: a7ec01f4f404da3488a0fec132f670ed, type: 2}
+    linkedStory: {fileID: 11400000, guid: f8088d0046ba39c46a2b3e4163f8b981, type: 2}
   cameraTarget: {fileID: 0}

@@ -12,23 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7f83ee662149645b0da0b121b3ae5a, type: 3}
   m_Name: High Arch
   m_EditorClassIdentifier: 
-  storyName: Beginning
+  storyName: HighArch
   textDatas:
-  - {fileID: 11400000, guid: ae21a3eddd5ca4144aadb452687b3251, type: 2}
-  - {fileID: 11400000, guid: 6c9f9078f6ec81f44a318529baa082ff, type: 2}
-  - {fileID: 11400000, guid: b81f2fee5cd72464aa573d8fce923bbf, type: 2}
-  - {fileID: 11400000, guid: 15c26f3908349f045a8b681c5844ad27, type: 2}
+  - {fileID: 11400000, guid: 44f5cf92900ccaa40b30de97c3128982, type: 2}
+  - {fileID: 11400000, guid: 4a15d078520528a40b379fc46dfdea58, type: 2}
+  - {fileID: 11400000, guid: de81e35279dad79438c812338f1d791b, type: 2}
   relatedStories:
-  - choiceText: ok boomer
+  - choiceText: the Keep
     choiceTexts:
-    - {fileID: 11400000, guid: 1c29c93a678c13e4ba49be9b660f2feb, type: 2}
-    linkedStory: {fileID: 11400000, guid: 1a58b9d5a9e1a2949bbafb56044931e9, type: 2}
-  - choiceText: the aspirants
+    - {fileID: 11400000, guid: 4830a6a0f64f947419e10f682284cece, type: 2}
+    linkedStory: {fileID: 11400000, guid: f8bcf28ff8227e64ca08ce8449fd69f9, type: 2}
+  - choiceText: the Overlook
     choiceTexts:
-    - {fileID: 11400000, guid: 87752c45260639148b96ad597195d041, type: 2}
-    linkedStory: {fileID: 0}
-  - choiceText: the aspirants
-    choiceTexts:
-    - {fileID: 11400000, guid: 87752c45260639148b96ad597195d041, type: 2}
-    linkedStory: {fileID: 0}
+    - {fileID: 11400000, guid: 9cabc5f8d58175640b39419c1e245458, type: 2}
+    linkedStory: {fileID: 11400000, guid: c8354e4a5c014c441bf308c8dd123b57, type: 2}
   cameraTarget: {fileID: 0}

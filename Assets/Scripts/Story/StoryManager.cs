@@ -2,18 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.SceneManagement;
 
 public class StoryManager : MonoBehaviour
 {
 	public TextEngine playerText;
 	public TextEngine narratorText;
 	public ChoiceBox choiceBox;
+	public ChoiceBox secretChoiceBox;
 	public FireController fireController;
 	public IslandCameraController cameraController;
+	public StoryData finalSecret;
+	public MainCameraController mainCamera;
 
 	public StoryData startStory;
 
-	private HashSet<string> visitedStories = new HashSet<string>();
+	public HashSet<string> visitedStories = new HashSet<string>();
 
 
 	private StoryData activeStory;
@@ -33,31 +37,57 @@ public class StoryManager : MonoBehaviour
 			playerText.Skip();
 			narratorText.Skip();
 			choiceBox.Choose();
+			secretChoiceBox.Choose();
 		}
 
 		if (Input.GetKeyDown(KeyCode.UpArrow))
 		{
 			choiceBox.Cycle(-1);
+			secretChoiceBox.Cycle(-1);
 		}
 		if (Input.GetKeyDown(KeyCode.DownArrow))
 		{
 			choiceBox.Cycle(1);
+			secretChoiceBox.Cycle(1);
+		}
+
+		if (GameManager.DEBUG)
+		{
+			if (Input.GetKeyDown(KeyCode.R))
+			{
+				startEndGame();
+			}
 		}
 	}
 
+	public void Abort()
+	{
+		narratorText.Abort();
+		playerText.Abort();
+		choiceBox.Abort();
+		StopAllCoroutines();
+	}
 
 	public void PlayStory(StoryData story)
 	{
-		visitedStories.Add(story.name);
+		visitedStories.Add(story.storyName);
 
 		for (int i = 0; i < story.textDatas.Count; ++i)
 		{
-			Action callback = null; 
+			Action callback = null;
 			if (i == story.textDatas.Count - 1)
 			{
 				callback = () => {
-					displayChoices(story.relatedStories);
-					fireController.StopVision();
+					if (story == finalSecret)
+					{
+						startEndGame();
+					}
+					else
+					{
+
+						displayChoices(story.relatedStories);
+						fireController.StopVision();
+					}
 				};
 			}
 			narratorText.enqueue(story.textDatas[i], callback);
@@ -83,7 +113,7 @@ public class StoryManager : MonoBehaviour
 		}
 	}
 
-	private void askChoice(StoryData.StoryChoice choice)
+	public void askChoice(StoryData.StoryChoice choice)
 	{
 		for (int i = 0; i < choice.choiceTexts.Count; ++i)
 		{
@@ -94,6 +124,16 @@ public class StoryManager : MonoBehaviour
 			}
 			playerText.enqueue(choice.choiceTexts[i], callback);
 		}
+	}
+
+	private void startEndGame()
+	{
+		mainCamera.Flash(Color.black, restartGame, 1f, 2f, 1f);
+	}
+
+	private void restartGame()
+	{
+		SceneManager.LoadScene(0);
 	}
 
 }

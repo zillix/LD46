@@ -132,7 +132,7 @@ public class FollowingTextBox : TextBox
 			if (lastScale != scale.x)
 			{
 				float relativeScale = scale.x / baseScale;
-				base.setAlpha(relativeScale);
+				//base.setAlpha(relativeScale);
 				if (connector)
 				{
 					connector.SetAlpha(relativeScale);

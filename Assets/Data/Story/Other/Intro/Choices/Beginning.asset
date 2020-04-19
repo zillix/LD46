@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8faa731cfab5f6459a5a47bd95cdd0f, type: 3}
   m_Name: Beginning
   m_EditorClassIdentifier: 
-  text: start from the beginning, papa
+  text: start from the beginning
   skippable: 1
   doOverridePauseDuration: 0
   pauseDuration: 3

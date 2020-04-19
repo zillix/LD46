@@ -25,6 +25,14 @@ public class ChoiceElement : MonoBehaviour
 
 	}
 
+	public void Abort()
+	{
+		if (blinkCoroutine != null)
+		{
+			StopCoroutine(blinkCoroutine);
+		}
+	}
+
 	public void SetSelected(bool isSelected)
 	{
 		selectedImage.enabled = isSelected;

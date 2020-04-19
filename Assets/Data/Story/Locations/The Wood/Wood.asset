@@ -12,23 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7f83ee662149645b0da0b121b3ae5a, type: 3}
   m_Name: Wood
   m_EditorClassIdentifier: 
-  storyName: Beginning
+  storyName: Wood
   textDatas:
-  - {fileID: 11400000, guid: ae21a3eddd5ca4144aadb452687b3251, type: 2}
-  - {fileID: 11400000, guid: 6c9f9078f6ec81f44a318529baa082ff, type: 2}
-  - {fileID: 11400000, guid: b81f2fee5cd72464aa573d8fce923bbf, type: 2}
-  - {fileID: 11400000, guid: 15c26f3908349f045a8b681c5844ad27, type: 2}
+  - {fileID: 11400000, guid: dfc18a7bbb919a148aeb2bf347de15f2, type: 2}
+  - {fileID: 11400000, guid: bbe1a19c2d115394691c8ec0ddae78c5, type: 2}
   relatedStories:
-  - choiceText: ok boomer
+  - choiceText: the Feral
     choiceTexts:
-    - {fileID: 11400000, guid: 1c29c93a678c13e4ba49be9b660f2feb, type: 2}
-    linkedStory: {fileID: 11400000, guid: 1a58b9d5a9e1a2949bbafb56044931e9, type: 2}
-  - choiceText: the aspirants
-    choiceTexts:
-    - {fileID: 11400000, guid: 87752c45260639148b96ad597195d041, type: 2}
-    linkedStory: {fileID: 0}
-  - choiceText: the aspirants
+    - {fileID: 11400000, guid: 4f2ac8d6080066d41b4b4551766014e5, type: 2}
+    linkedStory: {fileID: 11400000, guid: 5db336a7f13daeb4f83b317d6d651405, type: 2}
+  - choiceText: the Keep
     choiceTexts:
     - {fileID: 11400000, guid: 87752c45260639148b96ad597195d041, type: 2}
-    linkedStory: {fileID: 0}
+    linkedStory: {fileID: 11400000, guid: f8bcf28ff8227e64ca08ce8449fd69f9, type: 2}
+  - choiceText: the temple
+    choiceTexts:
+    - {fileID: 11400000, guid: ed4a165b3d9cfac488b10ee41413a45c, type: 2}
+    linkedStory: {fileID: 11400000, guid: 828ff2a13ec124743ac90e139cedebd8, type: 2}
   cameraTarget: {fileID: 0}

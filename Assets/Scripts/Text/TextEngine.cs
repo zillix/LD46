@@ -60,10 +60,10 @@ public class TextEngine : MonoBehaviour
 		if (currentText != null)
 		{
 			float pauseDuration = currentText.text.doOverridePauseDuration ? currentText.text.pauseDuration : DefaultPauseDuration;
-			if (textFinishedPlaying && currentDuration < currentText.text.pauseDuration)
+			if (textFinishedPlaying && currentDuration < pauseDuration)
 			{
 				currentDuration += Time.deltaTime;
-				if (currentDuration >= currentText.text.pauseDuration)
+				if (currentDuration >= pauseDuration)
 				{
 					advanceText();
 				}
@@ -83,6 +83,14 @@ public class TextEngine : MonoBehaviour
 		{
 			image.color = color;
 		}
+	}
+
+	public void Abort()
+	{
+		textQueue.Clear();
+		textPlayer.Abort();
+		textBox.hide();
+		currentText = null;
 	}
 
 	public void Skip()

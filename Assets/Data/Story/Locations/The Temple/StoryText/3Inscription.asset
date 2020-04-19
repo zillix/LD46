@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8faa731cfab5f6459a5a47bd95cdd0f, type: 3}
   m_Name: 3Inscription
   m_EditorClassIdentifier: 
-  text: '"<pious>ascension</pious> to the worthy"'
+  text: <i><b><pious>ascension</pious> awaits the worthy</b></i>
   skippable: 1
   doOverridePauseDuration: 0
   pauseDuration: 3
   doOverrideTypeSpeed: 0
   typeSpeed: 0.2
-  doJitter: 0
+  doJitter: 1
   jitterMagnitude: {x: 0, y: 1.5}
   jitterFrequencySeconds: 0.1

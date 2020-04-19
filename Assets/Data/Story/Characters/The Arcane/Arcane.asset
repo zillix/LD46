@@ -12,23 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7f83ee662149645b0da0b121b3ae5a, type: 3}
   m_Name: Arcane
   m_EditorClassIdentifier: 
-  storyName: Beginning
+  storyName: Arcane
   textDatas:
-  - {fileID: 11400000, guid: ae21a3eddd5ca4144aadb452687b3251, type: 2}
-  - {fileID: 11400000, guid: 6c9f9078f6ec81f44a318529baa082ff, type: 2}
-  - {fileID: 11400000, guid: b81f2fee5cd72464aa573d8fce923bbf, type: 2}
-  - {fileID: 11400000, guid: 15c26f3908349f045a8b681c5844ad27, type: 2}
+  - {fileID: 11400000, guid: 4255f56dcc88bf0488efa78ed9a8ff26, type: 2}
+  - {fileID: 11400000, guid: e5b971648d8b4854eb29b3affa770a32, type: 2}
+  - {fileID: 11400000, guid: 1c197d8042e2b4a4dbb3fe1971299671, type: 2}
   relatedStories:
-  - choiceText: ok boomer
+  - choiceText: the Keep
     choiceTexts:
-    - {fileID: 11400000, guid: 1c29c93a678c13e4ba49be9b660f2feb, type: 2}
-    linkedStory: {fileID: 11400000, guid: 1a58b9d5a9e1a2949bbafb56044931e9, type: 2}
-  - choiceText: the aspirants
+    - {fileID: 11400000, guid: 2375c87c4d78cab44bddef668f35f29b, type: 2}
+    linkedStory: {fileID: 11400000, guid: f8bcf28ff8227e64ca08ce8449fd69f9, type: 2}
+  - choiceText: the Pious
     choiceTexts:
-    - {fileID: 11400000, guid: 87752c45260639148b96ad597195d041, type: 2}
-    linkedStory: {fileID: 0}
-  - choiceText: the aspirants
-    choiceTexts:
-    - {fileID: 11400000, guid: 87752c45260639148b96ad597195d041, type: 2}
-    linkedStory: {fileID: 0}
+    - {fileID: 11400000, guid: 22dfc8457bd2066479b1bd1e20b6a792, type: 2}
+    linkedStory: {fileID: 11400000, guid: 49ea1933e1726f54b9d7f3b8b5772491, type: 2}
   cameraTarget: {fileID: 0}

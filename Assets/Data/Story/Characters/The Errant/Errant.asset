@@ -12,23 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7f83ee662149645b0da0b121b3ae5a, type: 3}
   m_Name: Errant
   m_EditorClassIdentifier: 
-  storyName: Beginning
+  storyName: Errant
   textDatas:
-  - {fileID: 11400000, guid: ae21a3eddd5ca4144aadb452687b3251, type: 2}
-  - {fileID: 11400000, guid: 6c9f9078f6ec81f44a318529baa082ff, type: 2}
-  - {fileID: 11400000, guid: b81f2fee5cd72464aa573d8fce923bbf, type: 2}
-  - {fileID: 11400000, guid: 15c26f3908349f045a8b681c5844ad27, type: 2}
+  - {fileID: 11400000, guid: 657d61090723bed4bb254f2614f81510, type: 2}
+  - {fileID: 11400000, guid: 58b473c006900704393ddbc1af08733b, type: 2}
+  - {fileID: 11400000, guid: fb941d6431220294b91810889c5561ba, type: 2}
   relatedStories:
-  - choiceText: ok boomer
+  - choiceText: the Aspirants
     choiceTexts:
-    - {fileID: 11400000, guid: 1c29c93a678c13e4ba49be9b660f2feb, type: 2}
-    linkedStory: {fileID: 11400000, guid: 1a58b9d5a9e1a2949bbafb56044931e9, type: 2}
-  - choiceText: the aspirants
+    - {fileID: 11400000, guid: 922de235384d207468b91dd177ca6c16, type: 2}
+    linkedStory: {fileID: 11400000, guid: cf3e1c77b9c878f4496ba2e744bfb097, type: 2}
+  - choiceText: the Peak
     choiceTexts:
-    - {fileID: 11400000, guid: 87752c45260639148b96ad597195d041, type: 2}
-    linkedStory: {fileID: 0}
-  - choiceText: the aspirants
-    choiceTexts:
-    - {fileID: 11400000, guid: 87752c45260639148b96ad597195d041, type: 2}
-    linkedStory: {fileID: 0}
+    - {fileID: 11400000, guid: b2dfc35c955c60840932cf283f2319ba, type: 2}
+    linkedStory: {fileID: 11400000, guid: 5988a1c40c0672142b2b1cdde6e34f04, type: 2}
   cameraTarget: {fileID: 0}

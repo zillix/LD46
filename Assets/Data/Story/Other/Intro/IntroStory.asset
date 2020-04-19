@@ -16,6 +16,7 @@ MonoBehaviour:
   textDatas:
   - {fileID: 11400000, guid: e6734d764bfae2a4399c7cd921f4354b, type: 2}
   - {fileID: 11400000, guid: c3dc4da7daf1ccd4aab19ce5e5154899, type: 2}
+  - {fileID: 11400000, guid: c35467e5689b49a40856b3cbe0171a78, type: 2}
   relatedStories:
   - choiceText: the beginning
     choiceTexts:
@@ -24,5 +25,5 @@ MonoBehaviour:
   - choiceText: the end
     choiceTexts:
     - {fileID: 11400000, guid: ae7ddc4d16045f04689d5ea45a7550fc, type: 2}
-    linkedStory: {fileID: 11400000, guid: 8dd9b5f71d1c464468f529b4cdfc6eba, type: 2}
+    linkedStory: {fileID: 11400000, guid: 94a0648c7d44dd545a1fccd82499fd14, type: 2}
   cameraTarget: {fileID: 0}

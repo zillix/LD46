@@ -29,6 +29,14 @@ public class TextTyper : MonoBehaviour
 		useSkipDelay = true;
 	}
 
+	public void Abort()
+	{
+		if (current != null)
+		{
+			StopCoroutine(current);
+		}
+	}
+
 	public void TypeText(string textToWrite, float letterDelay, Action onFinishedPlaying)
 	{
 		RawTextTypedSoFar = "";
