@@ -30,6 +30,7 @@ public class NotesController : MonoBehaviour
 	public ChoiceBox secretChoiceBox;
 	public StoryManager storyManager;
 	public float UnsuspendSecretChoiceDist = 7f;
+	public NoteEffect noteEffect;
 
 	private bool suspendSecretChoice = false;
 
@@ -78,6 +79,11 @@ public class NotesController : MonoBehaviour
 
 	public void NameDiscovered(CharacterName character)
 	{
+		if (!discoveredNames.Contains(character))
+		{
+			noteEffect.SetUnread(true);
+		}
+
 		discoveredNames.Add(character);
 	}
 
@@ -88,8 +94,13 @@ public class NotesController : MonoBehaviour
 			notesFound.Add(character, new HashSet<string>());
 		}
 
+		if (!notesFound[character].Contains(note))
+		{
+			noteEffect.SetUnread(true);
+		}
 		notesFound[character].Add(note);
 	}
+	
 
 	public void Update()
 	{
@@ -128,6 +139,7 @@ public class NotesController : MonoBehaviour
 		if (dist < notesTriggerDist && !suspendSecretChoice)
 		{
 			notesUi.Open();
+			noteEffect.SetUnread(false);
 
 			if (!secretChoiceBox.IsVisible)
 			{
