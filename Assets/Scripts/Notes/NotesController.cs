@@ -93,6 +93,11 @@ public class NotesController : MonoBehaviour
 
 	public void Update()
 	{
+		if (StoryManager.isEnding)
+		{
+			suspendSecretChoice = true;
+		}
+
 		if (GameManager.DEBUG)
 		{
 			CharacterName characterToFake = (CharacterName)(-1);
@@ -198,7 +203,7 @@ public class NotesController : MonoBehaviour
 			if (allRead)
 			{
 				StoryData.StoryChoice choice = new StoryData.StoryChoice();
-				choice.choiceText = "final question";
+				choice.choiceText = "the end";
 				choice.choiceTexts = new List<TextData> { finalQuestion, finalQuestion2 };
 				choice.linkedStory = finalSecretStory;
 				choices.Add(choice);

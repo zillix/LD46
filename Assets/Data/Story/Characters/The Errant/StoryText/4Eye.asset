@@ -10,15 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e8faa731cfab5f6459a5a47bd95cdd0f, type: 3}
-  m_Name: 4NewShores
+  m_Name: 4Eye
   m_EditorClassIdentifier: 
-  text: <feral>the Feral</feral> steered the Isle in its inexorable journey, setting
-    it on the path to discover new shores
+  text: <i><b>sheltered from her <feral>eye</feral></b></i>
   skippable: 1
   doOverridePauseDuration: 0
   pauseDuration: 3
   doOverrideTypeSpeed: 0
   typeSpeed: 0.2
-  doJitter: 0
+  doJitter: 1
   jitterMagnitude: {x: 0, y: 1.5}
   jitterFrequencySeconds: 0.1

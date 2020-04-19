@@ -9,6 +9,9 @@ public class Player : MonoBehaviour
 	public Animator animator;
 	public Transform sprite;
 
+	public Transform leftBound;
+	public Transform rightBound;
+
 	private bool _isTalking = false;
 	public bool isTalking
 	{
@@ -30,28 +33,40 @@ public class Player : MonoBehaviour
 	void Update()
 	{
 		bool isMoving = false;
+		bool isFacingRight = false;
 
 		Vector3 scale = sprite.localScale;
 		if (Input.GetKey(KeyCode.LeftArrow))
 		{
 			Vector3 position = transform.position;
-			position.x -= speed * Time.deltaTime;
+			float lastX = position.x;
+			position.x = Mathf.Max(leftBound.position.x, position.x - speed * Time.deltaTime);
 			transform.position = position;
-			isMoving = true;
+			isMoving = lastX != position.x;
 			scale.x = -1 * baseScale;
+			isFacingRight = false;
 		}
 		if (Input.GetKey(KeyCode.RightArrow))
 		{
 			Vector3 position = transform.position;
-			position.x += speed * Time.deltaTime;
+			float lastX = position.x;
+			position.x = Mathf.Min(rightBound.position.x, position.x + speed * Time.deltaTime);
 			transform.position = position;
-			isMoving = true;
+			isMoving = lastX != position.x;
 			scale.x = 1 * baseScale;
+			isFacingRight = true;
 
 		}
+		isFacingRight = scale.x > 0;
+		if (!StoryManager.hasFiredStarted)
+		{
+			isFacingRight = false;
+		}
+
 		sprite.localScale = scale;
 
 		animator.SetBool("IsMoving", isMoving);
+		animator.SetBool("IsFacingRight", isFacingRight);
 
 	}
 }

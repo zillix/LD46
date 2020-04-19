@@ -15,6 +15,7 @@ MonoBehaviour:
   storyName: HighArch
   textDatas:
   - {fileID: 11400000, guid: 44f5cf92900ccaa40b30de97c3128982, type: 2}
+  - {fileID: 11400000, guid: e417912b97fee174e924b39453de661b, type: 2}
   - {fileID: 11400000, guid: 4a15d078520528a40b379fc46dfdea58, type: 2}
   - {fileID: 11400000, guid: de81e35279dad79438c812338f1d791b, type: 2}
   relatedStories:
@@ -26,4 +27,8 @@ MonoBehaviour:
     choiceTexts:
     - {fileID: 11400000, guid: 9cabc5f8d58175640b39419c1e245458, type: 2}
     linkedStory: {fileID: 11400000, guid: c8354e4a5c014c441bf308c8dd123b57, type: 2}
+  - choiceText: the Everwood
+    choiceTexts:
+    - {fileID: 11400000, guid: 502cd284b82f53742972ffd3ed646c9c, type: 2}
+    linkedStory: {fileID: 11400000, guid: bbfddd28e37f43c469c6f49b5cb9eabe, type: 2}
   cameraTarget: {fileID: 0}

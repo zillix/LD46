@@ -17,6 +17,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4255f56dcc88bf0488efa78ed9a8ff26, type: 2}
   - {fileID: 11400000, guid: e5b971648d8b4854eb29b3affa770a32, type: 2}
   - {fileID: 11400000, guid: 1c197d8042e2b4a4dbb3fe1971299671, type: 2}
+  - {fileID: 11400000, guid: abd5a62353bdc584fae14a82101124da, type: 2}
   relatedStories:
   - choiceText: the Keep
     choiceTexts:

@@ -28,12 +28,12 @@ public class IslandCameraController : MonoBehaviour
 
 	public void Update()
 	{
-		if (targetTransform != null)
+		/*(if (targetTransform != null)
 		{
 			cameraBobAngle += CameraBobAngleSpeed * Time.deltaTime;
 			Vector3 targetPos = targetTransform.position;
 			transform.position = targetPos + new Vector3(CameraBobMagnitude.x * Mathf.Cos(Mathf.Deg2Rad * cameraBobAngle), CameraBobMagnitude.y * Mathf.Sin(Mathf.Deg2Rad * cameraBobAngle), 0);
-		}
+		}*/
 	}
 
 	public void ForceTransform(Transform target)

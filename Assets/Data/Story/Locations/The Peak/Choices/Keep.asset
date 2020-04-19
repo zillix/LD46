@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8faa731cfab5f6459a5a47bd95cdd0f, type: 3}
   m_Name: Keep
   m_EditorClassIdentifier: 
-  text: what transpired at the Keep?
+  text: what was within the Keep?
   skippable: 1
   doOverridePauseDuration: 0
   pauseDuration: 3

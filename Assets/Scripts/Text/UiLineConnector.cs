@@ -24,7 +24,7 @@ public class UiLineConnector : MonoBehaviour
     {
 		Vector3 pos = transform.position;
 		pos.z = -.2f;
-		transform.position = pos;
+		//transform.position = pos;
 
 		lineRenderer.positionCount = 2 + segments;
 		lineRenderer.startWidth = startWidth;

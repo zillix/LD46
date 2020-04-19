@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8faa731cfab5f6459a5a47bd95cdd0f, type: 3}
   m_Name: 2Folley
   m_EditorClassIdentifier: 
-  text: 'any correspondance they returned, from atop of the Peak as often as not,
-    read simply:'
+  text: the remote heights of the Peak was littered with hidden paths known only
+    to them
   skippable: 1
   doOverridePauseDuration: 0
   pauseDuration: 3
   doOverrideTypeSpeed: 0
   typeSpeed: 0.2
-  doJitter: 0
+  doJitter: 1
   jitterMagnitude: {x: 0, y: 1.5}
   jitterFrequencySeconds: 0.1

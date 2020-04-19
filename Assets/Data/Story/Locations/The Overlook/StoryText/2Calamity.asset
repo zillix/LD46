@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 2Calamity
   m_EditorClassIdentifier: 
   text: 'its humble furnishings speak to its former life as a simple watchtower,
-    but the hastily-added placard on the door reveals its newfound purpose:'
+    but the hastily-added placard on the door reveals its newfound <color=#E265AC>purpose</color>:'
   skippable: 1
   doOverridePauseDuration: 0
   pauseDuration: 3

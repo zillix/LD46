@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8faa731cfab5f6459a5a47bd95cdd0f, type: 3}
   m_Name: 1Pious
   m_EditorClassIdentifier: 
-  text: <pious>the Pious</pious> found their place quickly at the Temple, bathed
-    in <pious>solrays</pious> aligning themselves with its lofty pursuits
+  text: <pious>the Pious</pious> found their place quickly at the Temple, aligning
+    themselves with its lofty pursuits
   skippable: 1
   doOverridePauseDuration: 0
   pauseDuration: 3

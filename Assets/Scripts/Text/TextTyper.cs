@@ -15,7 +15,7 @@ public class TextTyper : MonoBehaviour
 	private Coroutine current;
 	private bool useSkipDelay = false;
 
-	private static float SKIP_DELAY = .001f;
+	private static float SKIP_DELAY = .0005f;
 
 	private static string HIDDEN_START = "<color=#00000000>";
 	private static string HIDDEN_END = "</color>";
@@ -142,7 +142,11 @@ public class TextTyper : MonoBehaviour
 				+ HIDDEN_END;*/
 			//text.text = existingText + typedText;
 			//GameManager.instance.sounds.PlayOneShot(GameManager.instance.sounds.letterType, .2f);
-			yield return new WaitForSeconds(useSkipDelay ? SKIP_DELAY : letterDelay);
+			if (!useSkipDelay || i % 4 == 0)
+			{
+				// when skipping type several letters at a time
+				yield return new WaitForSeconds(useSkipDelay ? SKIP_DELAY : letterDelay);
+			}
 		}
 
 		onFinishedPlaying();

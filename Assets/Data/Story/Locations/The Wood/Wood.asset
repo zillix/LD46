@@ -23,9 +23,9 @@ MonoBehaviour:
     linkedStory: {fileID: 11400000, guid: 5db336a7f13daeb4f83b317d6d651405, type: 2}
   - choiceText: the Keep
     choiceTexts:
-    - {fileID: 11400000, guid: 87752c45260639148b96ad597195d041, type: 2}
+    - {fileID: 11400000, guid: 83a869567036c9147ba146bc565c27c8, type: 2}
     linkedStory: {fileID: 11400000, guid: f8bcf28ff8227e64ca08ce8449fd69f9, type: 2}
-  - choiceText: the temple
+  - choiceText: the Temple
     choiceTexts:
     - {fileID: 11400000, guid: ed4a165b3d9cfac488b10ee41413a45c, type: 2}
     linkedStory: {fileID: 11400000, guid: 828ff2a13ec124743ac90e139cedebd8, type: 2}

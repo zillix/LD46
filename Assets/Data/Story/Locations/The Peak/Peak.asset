@@ -17,6 +17,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f8e205e643b7fa14ca6414690edc94cc, type: 2}
   - {fileID: 11400000, guid: 06aa48797a37cf34c8c182a75f2a6c3e, type: 2}
   - {fileID: 11400000, guid: ec5ba464c20064746b73d38aaa6e498f, type: 2}
+  - {fileID: 11400000, guid: d41ff85a3ece17444b96a0d4bb84effd, type: 2}
   relatedStories:
   - choiceText: the Maw
     choiceTexts:

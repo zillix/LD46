@@ -21,7 +21,10 @@ public class StoryManager : MonoBehaviour
 	public Transform player;
 
 	private bool waitingForStartTrigger = false;
-	private bool startTriggered = false;
+	public static bool startTriggered = false;
+	public static bool hasFiredStarted = false;
+
+	public static bool isEnding = false;
 
 	public HashSet<string> visitedStories = new HashSet<string>();
 
@@ -54,7 +57,7 @@ public class StoryManager : MonoBehaviour
 			{
 				startTriggered = true;
 				waitingForStartTrigger = false;
-				PlayStory(startStory, ()=> { fireController.TurnOn(); });
+				PlayStory(startStory, ()=> { fireController.TurnOn(); hasFiredStarted = true; });
 			}
 		}
 
@@ -155,7 +158,8 @@ public class StoryManager : MonoBehaviour
 
 	private void startEndGame()
 	{
-		mainCamera.Flash(Color.black, restartGame, 1f, 2f, 1f);
+		mainCamera.Flash(Color.black, restartGame, 3f, 4f, 1f);
+		isEnding = true;
 	}
 
 	private void restartGame()

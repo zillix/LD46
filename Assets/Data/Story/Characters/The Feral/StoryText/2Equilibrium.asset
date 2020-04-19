@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: 2Equilibrium
   m_EditorClassIdentifier: 
   text: it cannot be guessed which one tamed the other, but a savage equilibrium
-    was quickly established, and <feral>the Feral</feral> was rarely seen outside
-    of its wilderness
+    was quickly established
   skippable: 1
   doOverridePauseDuration: 0
   pauseDuration: 3

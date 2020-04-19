@@ -13,10 +13,7 @@ MonoBehaviour:
   m_Name: 3Missive
   m_EditorClassIdentifier: 
   text: 'the final missive,  caught in the now-overgrown garden in the courtyard,
-    contained only a single word:{1}
-
-
-    <i><pious>revelation</pious></i>'
+    contained only a single word:'
   skippable: 1
   doOverridePauseDuration: 0
   pauseDuration: 3

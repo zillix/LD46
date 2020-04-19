@@ -17,6 +17,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 657d61090723bed4bb254f2614f81510, type: 2}
   - {fileID: 11400000, guid: 58b473c006900704393ddbc1af08733b, type: 2}
   - {fileID: 11400000, guid: fb941d6431220294b91810889c5561ba, type: 2}
+  - {fileID: 11400000, guid: 7f9efd400f2c5ac46ae18b7341cbb72b, type: 2}
   relatedStories:
   - choiceText: the Aspirants
     choiceTexts:

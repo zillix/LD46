@@ -12,11 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8faa731cfab5f6459a5a47bd95cdd0f, type: 3}
   m_Name: 3Engrave
   m_EditorClassIdentifier: 
-  text: 'atop one such viewpoint is etched the simple phrase:
-
-
-    <cspace=1><i>peace
-    may be found where answers cannot</i></cspace>'
+  text: 'atop one such viewpoint is etched the simple phrase:'
   skippable: 1
   doOverridePauseDuration: 0
   pauseDuration: 3

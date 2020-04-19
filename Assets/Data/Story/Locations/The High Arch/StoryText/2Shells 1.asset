@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8faa731cfab5f6459a5a47bd95cdd0f, type: 3}
   m_Name: 2Shells 1
   m_EditorClassIdentifier: 
-  text: 'fastened by a crude hand, a series of shells dangle beneath{.5}
+  text: 'fastened by a delicate hand, a series of shells dangle below{.5}
 
 
     scrawled
-    into the rock face are four short words:'
+    into the rock is a single wood:'
   skippable: 1
   doOverridePauseDuration: 0
   pauseDuration: 3

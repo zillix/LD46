@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8faa731cfab5f6459a5a47bd95cdd0f, type: 3}
   m_Name: 3Calamity
   m_EditorClassIdentifier: 
-  text: <b><cspace=1><i>final hope against the <arcane>calamity</arcane></i></cspace></b>
+  text: <b><cspace=1><i>we must endure the <arcane>calamity</arcane></i></cspace></b>
   skippable: 1
   doOverridePauseDuration: 0
   pauseDuration: 3

@@ -15,6 +15,7 @@ MonoBehaviour:
   storyName: Pious
   textDatas:
   - {fileID: 11400000, guid: 6bb0c51d924e33e43a2f13c06bb61f4b, type: 2}
+  - {fileID: 11400000, guid: a7192e37ca25c3640a1e470007b3206d, type: 2}
   - {fileID: 11400000, guid: 8104c345068bfc2428b680c2b7174692, type: 2}
   - {fileID: 11400000, guid: 2fb6050e50779844da00f87afc3c0cad, type: 2}
   relatedStories:

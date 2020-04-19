@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 1Errant
   m_EditorClassIdentifier: 
   text: contrasting the fervor of the other Aspirants, <errant>the Errant</errant>
-    abandoned the contest in favor of a life of exploration
+    eschewed their <color=#E265AC>purpose</color>, favoring a life of exploration
   skippable: 1
   doOverridePauseDuration: 0
   pauseDuration: 3
