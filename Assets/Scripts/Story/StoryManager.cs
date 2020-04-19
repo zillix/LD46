@@ -112,7 +112,8 @@ public class StoryManager : MonoBehaviour
 					{
 
 						displayChoices(story.relatedStories, postChoiceCallback);
-						fireController.StopVision();
+						cameraController.TweenToPosition(cameraController.startTransform);
+						//fireController.StopVision();
 					}
 				};
 			}

@@ -28,7 +28,7 @@ public class IslandCameraController : MonoBehaviour
 
 	public void Update()
 	{
-		if (tween == null && targetTransform != null)
+		if (targetTransform != null)
 		{
 			cameraBobAngle += CameraBobAngleSpeed * Time.deltaTime;
 			Vector3 targetPos = targetTransform.position;
@@ -64,6 +64,7 @@ public class IslandCameraController : MonoBehaviour
 
 			yield return null;
 		}
+		tween = null;
 	}
 
 }

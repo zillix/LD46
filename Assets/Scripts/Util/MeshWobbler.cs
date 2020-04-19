@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(MeshFilter))]
+[RequireComponent(typeof(PolygonMesh2D))]
 public class MeshWobbler : MonoBehaviour
 {
 	public float wobbleScale = 1f;
 	public float wobbleSpeedScale = 1f;
 
-	public static float wobblerMultiplier = 1f;
+	public static float wobblerMultiplier = .7f;
 
 	private Vector3[] baseVertices;
 	private Vector3[] currentVertices;
