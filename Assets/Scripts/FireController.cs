@@ -58,6 +58,9 @@ public class FireController : MonoBehaviour
 		offVel.yMultiplier = OffLinearY;
 		offVel.radialMultiplier = OffRadialSpeed;
 		offVel.orbitalX = OffOrbitalX;
+
+
+		particleSystemRenderer.sortingLayerName = "Foreground";
 	}
 
 	public void TurnOn()

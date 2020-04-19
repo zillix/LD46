@@ -123,7 +123,7 @@ public class StoryManager : MonoBehaviour
 			{
 				// We are showing the island
 				fireController.StartVision();
-				cameraController.ForceTransform(cameraController.startTransform);
+				//cameraController.ForceTransform(cameraController.startTransform);
 				cameraController.TweenToPosition(story.cameraTarget);
 			}
 

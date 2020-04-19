@@ -25,6 +25,8 @@ public class FollowingTextBox : TextBox
 
 	private float bobAngle = 0f;
 
+	private float lastY = 0;
+
 
 
 	public float hideScaleSpeed = 1f;
@@ -45,7 +47,10 @@ public class FollowingTextBox : TextBox
 		base.Start();
 		hide();
 		baseScale = scaleTransform.localScale.x;
-    }
+
+
+		lastY = transform.position.y;
+	}
 
 	public override void hide()
 	{
@@ -114,6 +119,10 @@ public class FollowingTextBox : TextBox
 				myPos.y = Mathf.Abs(deltaPos) > Mathf.Abs(deltaY) ? targetYPos : myPos.y + deltaPos;
 			}
 			transform.position = myPos;
+		}
+		else
+		{
+			transform.position = new Vector3(transform.position.x, lastY, 0) + bobOffset;
 		}
 
 		if (moveHide)
