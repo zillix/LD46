@@ -45,6 +45,9 @@ public class ChoiceElement : MonoBehaviour
 			return;
 		}
 
+
+		Sounds.PlayOneShot(Sounds.instance.questionChosen, .6f);
+
 		blinkCoroutine = StartCoroutine(blinkThenCallback(BlinkDuration, callback));
 	}
 

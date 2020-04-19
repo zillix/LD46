@@ -12,6 +12,9 @@ public class Player : MonoBehaviour
 	public Transform leftBound;
 	public Transform rightBound;
 
+	public float FootstepDelay = .6f;
+	private float footstepTime = 0f;
+
 	private bool _isTalking = false;
 	public bool isTalking
 	{
@@ -57,6 +60,18 @@ public class Player : MonoBehaviour
 			isFacingRight = true;
 
 		}
+
+		if (isMoving)
+		{
+			footstepTime -= Time.deltaTime;
+			if (footstepTime < 0)
+			{
+				footstepTime = FootstepDelay;
+				Sounds.PlayOneShot(Sounds.instance.footstep, 1f);
+			}
+		}
+
+
 		isFacingRight = scale.x > 0;
 		if (!StoryManager.hasFiredStarted)
 		{

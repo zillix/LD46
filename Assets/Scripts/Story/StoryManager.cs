@@ -26,6 +26,8 @@ public class StoryManager : MonoBehaviour
 
 	public static bool isEnding = false;
 
+	public AudioSource musicSource;
+
 	public HashSet<string> visitedStories = new HashSet<string>();
 
 
@@ -57,7 +59,7 @@ public class StoryManager : MonoBehaviour
 			{
 				startTriggered = true;
 				waitingForStartTrigger = false;
-				PlayStory(startStory, ()=> { fireController.TurnOn(); hasFiredStarted = true; });
+				PlayStory(startStory, ()=> { fireController.TurnOn(); hasFiredStarted = true; musicSource.Play(); });
 			}
 		}
 

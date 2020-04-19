@@ -20,6 +20,8 @@ public class TextTyper : MonoBehaviour
 	private static string HIDDEN_START = "<color=#00000000>";
 	private static string HIDDEN_END = "</color>";
 
+	public AudioClip overrideTypeSound;
+
 	private void Start()
 	{
 	}
@@ -141,10 +143,11 @@ public class TextTyper : MonoBehaviour
 				+ fullString.Substring(cumulativeIndex)
 				+ HIDDEN_END;*/
 			//text.text = existingText + typedText;
-			//GameManager.instance.sounds.PlayOneShot(GameManager.instance.sounds.letterType, .2f);
 			if (!useSkipDelay || i % 4 == 0)
 			{
 				// when skipping type several letters at a time
+				Sounds.PlayOneShot(overrideTypeSound != null ? overrideTypeSound : Sounds.instance.textType, .4f);
+
 				yield return new WaitForSeconds(useSkipDelay ? SKIP_DELAY : letterDelay);
 			}
 		}

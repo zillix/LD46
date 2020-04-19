@@ -157,6 +157,7 @@ public class TextEngine : MonoBehaviour
 			textQueue.RemoveAt(0);
 			textFinishedPlaying = false;
 			textPlayer.PlayText(currentText.text,onTextPlayed );
+			Sounds.PlayOneShot(Sounds.instance.advanceText, .4f);
 		}
 		else
 		{

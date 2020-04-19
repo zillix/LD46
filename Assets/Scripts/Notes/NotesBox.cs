@@ -28,8 +28,6 @@ public class NotesBox : MonoBehaviour
 	public void Start()
 	{
 		Close();
-		Open();
-		Close();
 		targetPos = transform.position;
 	}
 
@@ -45,6 +43,8 @@ public class NotesBox : MonoBehaviour
 		{
 			return;
 		}
+		Sounds.PlayOneShot(Sounds.instance.openNotes, .7f);
+
 		isOpen = true;
 		gameObject.SetActive(true);
 		foreach (CharacterName character in Enum.GetValues(typeof(CharacterName))) {
