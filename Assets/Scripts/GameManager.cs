@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
 
 	private bool gameStarted = false;
 
-	public static bool DEBUG = true;
+	public static bool DEBUG = false;
 
 	public void Start()
 	{

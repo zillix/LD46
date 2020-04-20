@@ -16,10 +16,51 @@ public class IslandCameraController : MonoBehaviour
 	private Transform targetTransform;
 	private Coroutine tween;
 
+	public Transform mawPoint;
+	public Transform peakPoint;
+	public Transform overlookPoint;
+	public Transform cavernPoint;
+	public Transform archPoint;
+	public Transform centerPoint;
+	public Transform templePoint;
+	public Transform spirePoint;
+	public Transform woodPoint;
+	public Transform keepPoint;
+
 	public void Awake()
 	{
 
 		ForceTransform(startTransform);
+	}
+
+	public Transform GetViewpoint(StoryData.CameraViewpoint viewpoint)
+	{
+		switch (viewpoint)
+		{
+			case StoryData.CameraViewpoint.arch:
+				return archPoint;
+			case StoryData.CameraViewpoint.cavern:
+				return cavernPoint;
+			case StoryData.CameraViewpoint.center:
+				return centerPoint;
+			case StoryData.CameraViewpoint.keep:
+				return keepPoint;
+			case StoryData.CameraViewpoint.maw:
+				return mawPoint;
+			case StoryData.CameraViewpoint.none:
+				return null;
+			case StoryData.CameraViewpoint.overlook:
+				return overlookPoint;
+			case StoryData.CameraViewpoint.peak:
+				return peakPoint;
+			case StoryData.CameraViewpoint.spire:
+				return spirePoint;
+			case StoryData.CameraViewpoint.temple:
+				return templePoint;
+			case StoryData.CameraViewpoint.wood:
+				return woodPoint;
+			default:return null;
+		}
 	}
 
 	public void Start()

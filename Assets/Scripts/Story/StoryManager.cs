@@ -59,7 +59,11 @@ public class StoryManager : MonoBehaviour
 			{
 				startTriggered = true;
 				waitingForStartTrigger = false;
-				PlayStory(startStory, ()=> { fireController.TurnOn(); hasFiredStarted = true; musicSource.Play(); });
+				PlayStory(startStory, ()=> {
+					fireController.TurnOn();
+					hasFiredStarted = true;
+					musicSource.Play();
+				});
 			}
 		}
 
@@ -124,12 +128,13 @@ public class StoryManager : MonoBehaviour
 			}
 			narratorText.enqueue(story.textDatas[i], callback);
 
-			if (story.cameraTarget != null)
+			Transform cameraTarget = cameraController.GetViewpoint(story.cameraTarget);
+			if (cameraTarget != null)
 			{
 				// We are showing the island
 				fireController.StartVision();
 				//cameraController.ForceTransform(cameraController.startTransform);
-				cameraController.TweenToPosition(story.cameraTarget);
+				cameraController.TweenToPosition(cameraTarget);
 			}
 
 		}

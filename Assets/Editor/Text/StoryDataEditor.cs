@@ -34,7 +34,7 @@ public class StoryDataEditor : Editor
 
 		EditorGUILayout.Space();
 
-		data.cameraTarget = (Transform)EditorGUILayout.ObjectField("Camera Target", data.cameraTarget, typeof(Transform), true);
+		data.cameraTarget = (StoryData.CameraViewpoint)EditorGUILayout.EnumPopup("Camera Target", data.cameraTarget);
 
 		EditorGUILayout.Space();
 
@@ -86,8 +86,7 @@ public class StoryDataEditor : Editor
 		EditorGUI.indentLevel--;
 
 		if (GUI.changed)
-		{
-			EditorUtility.SetDirty(data);
-		}
+		EditorUtility.SetDirty(data);
+		
 	}
 }

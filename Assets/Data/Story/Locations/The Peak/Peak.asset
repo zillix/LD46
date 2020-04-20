@@ -31,4 +31,4 @@ MonoBehaviour:
     choiceTexts:
     - {fileID: 11400000, guid: 06f62255033806e41b0b0324279317db, type: 2}
     linkedStory: {fileID: 11400000, guid: e4787cd35e6e8f5429b37c93063a3c94, type: 2}
-  cameraTarget: {fileID: 0}
+  cameraTarget: 2

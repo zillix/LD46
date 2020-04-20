@@ -23,8 +23,8 @@ MonoBehaviour:
     choiceTexts:
     - {fileID: 11400000, guid: dba2140c952d0064e8e9c9511658bad3, type: 2}
     linkedStory: {fileID: 11400000, guid: 828ff2a13ec124743ac90e139cedebd8, type: 2}
-  - choiceText: the Overlook
+  - choiceText: the Maw
     choiceTexts:
     - {fileID: 11400000, guid: ddf9290d3c3e16e4790ca8e2fce6c0a4, type: 2}
-    linkedStory: {fileID: 11400000, guid: c8354e4a5c014c441bf308c8dd123b57, type: 2}
-  cameraTarget: {fileID: 0}
+    linkedStory: {fileID: 11400000, guid: acd34aa0e53dff345a053d021daed263, type: 2}
+  cameraTarget: 7
